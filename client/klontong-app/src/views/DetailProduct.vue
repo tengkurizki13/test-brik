@@ -28,11 +28,26 @@ export default {
     <div class="container shadow p-3 mb-5 bg-body-tertiary rounded me-3 ">
       <div class="row">
       <div class="col-6">
-        <img :src=product.image class="card-img-top" alt="..." >
+        <div class="card">
+          <div class="card-body">
+            <img :src=product.image class="card-img-top" alt="..." height="380" width="200">
+          </div>
+        </div>
       </div>
       <div class="col-6">
-        <p>{{ product.description }}</p>
-        <button class="btn btn-success text-bold text-white" @click="goToDetailCourse">Return to home</button>
+        <div class="card">
+          <div class="card-body">
+           
+            
+            <h1>{{ product.name }}</h1>
+            <p>{{ product.harga }}</p>
+            <p>{{ product.sku }}</p>
+            <p>{{ product.w }}</p>
+            <p>{{ product.description }}</p>
+            <p>{{ product.description }}</p>
+            <p>{{ product.description }}</p>
+          </div>
+        </div>
       </div>
      </div>
     </div>

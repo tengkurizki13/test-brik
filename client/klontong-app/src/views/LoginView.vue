@@ -4,10 +4,6 @@ import { useAuthenticationStore } from '../stores/authentication'
 
 
 export default {
-  data() {
-    return {
-    }
-  },
   methods: {
     ...mapActions(useAuthenticationStore, ['login','sendLoginWithGoogle']),
     loginHandler(){

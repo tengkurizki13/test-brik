@@ -29,21 +29,25 @@ class ProductController {
       const {
         CategoryId,
         categoryName,
+        name,
         sku,
         weight,
         width,
         length,
+        description,
         height,
         image,
         harga,
       } = req.body;
 
-      let createProduct = await Product.createItem({
+      await Product.create({
         CategoryId,
         categoryName,
         sku,
+        name,
         weight,
         width,
+        description,
         length,
         height,
         image,

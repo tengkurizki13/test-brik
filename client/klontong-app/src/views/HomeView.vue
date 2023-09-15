@@ -39,9 +39,9 @@ export default {
   <Navbar/>
   <div class="container">
     <div class="row mb-5">
-      <div class="col-5"> 
+      <div class="col-5 col-xl-12"> 
         <form class="d-flex" role="search" @submit.prevent="changePaginationAndSearch()">
-        <input v-model="search" class="form-control me-2" type="search" placeholder="search" aria-label="Search">
+        <input v-model="search" class="form-control me-2" type="search" placeholder="search by name" aria-label="Search">
         <button class="btn btn-outline-success me-5" type="submit">Search</button>
       </form>
     </div>

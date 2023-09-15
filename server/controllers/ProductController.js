@@ -36,7 +36,7 @@ class ProductController {
   static async productAdd(req, res, next) {
     try {
       const {
-        CategoryId = Math.floor(Math.random() * 10) + 1,
+        CategoryId = Math.floor(Math.random() * 3) + 1,
         categoryName,
         name,
         sku,

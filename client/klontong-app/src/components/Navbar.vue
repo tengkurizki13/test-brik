@@ -15,7 +15,10 @@ export default {
     logoutHandler(){
       this.isLogin= false
       this.logout()
-    }
+    },
+    changePathToHome(){
+      this.$router.push("/")
+    },
   }
 }
 </script>
@@ -24,7 +27,7 @@ export default {
     class="navbar navbar-expand-lg bg-light shadow-lg p-3 mb-5 bg-body rounded"
   >
     <div class="container-fluid">
-      <img src="@/assets/icons/logo-teacher.jpg" width="30"   />
+      <img src="@/assets/icons/logo-teacher.jpg" width="30"  @click="changePathToHome"/>
       <span class="text-bold text-primery"> My TOKO</span>
       <div class="collapse navbar-collapse ms-5" >
         <div class="ms-auto">

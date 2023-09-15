@@ -12,7 +12,7 @@ export default {
 }
 </script>
 <template>
-  <div class="col-4">
+  <div class="col-md-4">
   <div class="shadow p-3 mb-5 bg-body-tertiary rounded me-3">
     <img :src=product.image class="card-img-top" alt="...">
       <h1 class="text-bold text-primery">{{ product.name }}</h1>

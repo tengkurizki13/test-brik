@@ -22,8 +22,8 @@ export default {
 <template>
  <section id="register" class="mt-5">
       <div class="row">
-        <div class="col-4"></div>
-        <div class="col-4">
+        <div class="col-md-4"></div>
+        <div class="col-md-4">
           <h1 class="text-bold text-center mb-5"> <i class="bi bi-box-arrow-in-right"></i> REGISTER</h1>
           <form id="register-form" @submit.prevent="createAccount">
             <div class="mb-3">
@@ -39,7 +39,7 @@ export default {
             <div class="text-bold  fst-italic">if you  have an account,click <a href="#" @click.prevent="changePathTologin">here</a></div>
           </form>
         </div>
-        <div class="col-4"></div>
+        <div class="col-md-4"></div>
       </div>
     </section>
 </template>

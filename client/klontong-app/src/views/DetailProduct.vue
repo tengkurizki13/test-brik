@@ -27,25 +27,27 @@ export default {
   <div class="row px-3">
     <div class="container shadow p-3 mb-5 bg-body-tertiary rounded me-3 ">
       <div class="row">
-      <div class="col-6">
+      <div class="col-md-6">
         <div class="card">
           <div class="card-body">
             <img :src=product.image class="card-img-top" alt="..." height="380" width="200">
           </div>
         </div>
       </div>
-      <div class="col-6">
+      <div class="col-md-6">
         <div class="card">
           <div class="card-body">
-           
-            
-            <h1>{{ product.name }}</h1>
-            <p>{{ product.harga }}</p>
-            <p>{{ product.sku }}</p>
-            <p>{{ product.w }}</p>
-            <p>{{ product.description }}</p>
-            <p>{{ product.description }}</p>
-            <p>{{ product.description }}</p>
+            <h1 class="fw-bold">{{ product.name }}</h1><hr>
+<pre>
+Description:
+{{ product.description }}
+SKU : {{ product.sku }}
+WEIGHT : {{ product.weight }}
+WIDTH : {{ product.width }}
+LENGTH : {{ product.length}}
+HEIGHT : {{ product.height }}
+PRICE : Rp. {{ product.harga }}
+</pre>
           </div>
         </div>
       </div>
